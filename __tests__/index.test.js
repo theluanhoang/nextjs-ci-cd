@@ -29,6 +29,7 @@ describe("Calculator", () => {
     addButton.click();
 
     expect(resultArea).toHaveTextContent("13");
+    expect(screen.getByTestId("Hoang The Luan")).toBeInTheDocument();
   });
 
   it("subtracts numbers", () => {
